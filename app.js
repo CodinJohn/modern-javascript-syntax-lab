@@ -97,5 +97,43 @@ let tasteGood = pizza === 'tasty' ? 'yum' : 'yuck';
 console.log('Exercise 9:', tasteGood)
 
 // Exercise 10
+// 1. SET LANGUAGE
 
+// Construct a single line of code that assigns a default value using the logical OR operator. This line should match the logic of the following statement: 
+
+// "LANG is equal to localLangConfig or the default value of English."
+
+
+const localLangConfig = 'es' && 'en';  // Change to 'es', 'fr', etc., or keep it null
+const LANG = localLangConfig
+
+// a. Create a variable called LANG
+// b. Assign LANG the value of localLangConfig or 'en' as a default
+
+
+// Log the result
+console.log('Exercise10A:','Language setting:', LANG);
+
+// 2. SET WEBSITE THEME
+
+const userSavedTheme = '' || 'dark'; // Change to 'dark', 'contrast', etc., or keep it null
+const USER_THEME = userSavedTheme
+// a. Create a variable called USER_THEME
+// b. Assign USER_THEME the value of userSavedTheme or 'light' as a default
+
+// Log the result
+console.log('Exercise 10B:','User theme setting:', USER_THEME);
+
+
+// Exercise 11
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+
+const adventurer = {
+    name: 'Alice',
+  };
   
+  let cat = adventurer.cat?.age;
+  
+  console.log(cat);
+  
+// Collabed with Anitra and Samantha
